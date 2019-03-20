@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.5.12"/>
+		<Timestamp>2019-03-20T02:57:45Z</Timestamp>
+	</Header>
+	<MiningBuildTask>
+		<Extension>PMMLPipeline(steps=[('tree_x', DecisionTreeRegressor(criterion='friedman_mse', max_depth=None,
+           max_features=None, max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=9, min_samples_split=2,
+           min_weight_fraction_leaf=0.02, presort=False, random_state=None,
+           splitter='best'))])</Extension>
+	</MiningBuildTask>
+	<DataDictionary>
+		<DataField name="y" optype="continuous" dataType="double"/>
+		<DataField name="x2" optype="continuous" dataType="float"/>
+		<DataField name="x8" optype="continuous" dataType="float"/>
+		<DataField name="x11" optype="continuous" dataType="float"/>
+		<DataField name="x12" optype="continuous" dataType="float"/>
+		<DataField name="x14" optype="continuous" dataType="float"/>
+		<DataField name="x15" optype="continuous" dataType="float"/>
+		<DataField name="x19" optype="continuous" dataType="float"/>
+		<DataField name="x21" optype="continuous" dataType="float"/>
+		<DataField name="x27" optype="continuous" dataType="float"/>
+		<DataField name="x29" optype="continuous" dataType="float"/>
+		<DataField name="x31" optype="continuous" dataType="float"/>
+		<DataField name="x34" optype="continuous" dataType="float"/>
+		<DataField name="x35" optype="continuous" dataType="float"/>
+		<DataField name="x36" optype="continuous" dataType="float"/>
+		<DataField name="x38" optype="continuous" dataType="float"/>
+		<DataField name="x40" optype="continuous" dataType="float"/>
+		<DataField name="x43" optype="continuous" dataType="float"/>
+		<DataField name="x44" optype="continuous" dataType="float"/>
+		<DataField name="x46" optype="continuous" dataType="float"/>
+		<DataField name="x49" optype="continuous" dataType="float"/>
+		<DataField name="x50" optype="continuous" dataType="float"/>
+		<DataField name="x59" optype="continuous" dataType="float"/>
+		<DataField name="x60" optype="continuous" dataType="float"/>
+	</DataDictionary>
+	<TransformationDictionary>
+		<DerivedField name="double(x36)" optype="continuous" dataType="double">
+			<FieldRef field="x36"/>
+		</DerivedField>
+		<DerivedField name="double(x35)" optype="continuous" dataType="double">
+			<FieldRef field="x35"/>
+		</DerivedField>
+		<DerivedField name="double(x38)" optype="continuous" dataType="double">
+			<FieldRef field="x38"/>
+		</DerivedField>
+		<DerivedField name="double(x43)" optype="continuous" dataType="double">
+			<FieldRef field="x43"/>
+		</DerivedField>
+		<DerivedField name="double(x44)" optype="continuous" dataType="double">
+			<FieldRef field="x44"/>
+		</DerivedField>
+		<DerivedField name="double(x31)" optype="continuous" dataType="double">
+			<FieldRef field="x31"/>
+		</DerivedField>
+		<DerivedField name="double(x34)" optype="continuous" dataType="double">
+			<FieldRef field="x34"/>
+		</DerivedField>
+		<DerivedField name="double(x19)" optype="continuous" dataType="double">
+			<FieldRef field="x19"/>
+		</DerivedField>
+		<DerivedField name="double(x29)" optype="continuous" dataType="double">
+			<FieldRef field="x29"/>
+		</DerivedField>
+		<DerivedField name="double(x40)" optype="continuous" dataType="double">
+			<FieldRef field="x40"/>
+		</DerivedField>
+		<DerivedField name="double(x50)" optype="continuous" dataType="double">
+			<FieldRef field="x50"/>
+		</DerivedField>
+		<DerivedField name="double(x12)" optype="continuous" dataType="double">
+			<FieldRef field="x12"/>
+		</DerivedField>
+		<DerivedField name="double(x14)" optype="continuous" dataType="double">
+			<FieldRef field="x14"/>
+		</DerivedField>
+		<DerivedField name="double(x27)" optype="continuous" dataType="double">
+			<FieldRef field="x27"/>
+		</DerivedField>
+		<DerivedField name="double(x21)" optype="continuous" dataType="double">
+			<FieldRef field="x21"/>
+		</DerivedField>
+		<DerivedField name="double(x60)" optype="continuous" dataType="double">
+			<FieldRef field="x60"/>
+		</DerivedField>
+		<DerivedField name="double(x8)" optype="continuous" dataType="double">
+			<FieldRef field="x8"/>
+		</DerivedField>
+		<DerivedField name="double(x59)" optype="continuous" dataType="double">
+			<FieldRef field="x59"/>
+		</DerivedField>
+		<DerivedField name="double(x46)" optype="continuous" dataType="double">
+			<FieldRef field="x46"/>
+		</DerivedField>
+		<DerivedField name="double(x2)" optype="continuous" dataType="double">
+			<FieldRef field="x2"/>
+		</DerivedField>
+		<DerivedField name="double(x49)" optype="continuous" dataType="double">
+			<FieldRef field="x49"/>
+		</DerivedField>
+		<DerivedField name="double(x15)" optype="continuous" dataType="double">
+			<FieldRef field="x15"/>
+		</DerivedField>
+		<DerivedField name="double(x11)" optype="continuous" dataType="double">
+			<FieldRef field="x11"/>
+		</DerivedField>
+	</TransformationDictionary>
+	<TreeModel functionName="regression" missingValueStrategy="nullPrediction" noTrueChildStrategy="returnLastPrediction" splitCharacteristic="multiSplit">
+		<MiningSchema>
+			<MiningField name="y" usageType="target"/>
+			<MiningField name="x36"/>
+			<MiningField name="x35"/>
+			<MiningField name="x38"/>
+			<MiningField name="x43"/>
+			<MiningField name="x44"/>
+			<MiningField name="x31"/>
+			<MiningField name="x34"/>
+			<MiningField name="x19"/>
+			<MiningField name="x29"/>
+			<MiningField name="x40"/>
+			<MiningField name="x50"/>
+			<MiningField name="x12"/>
+			<MiningField name="x14"/>
+			<MiningField name="x27"/>
+			<MiningField name="x21"/>
+			<MiningField name="x60"/>
+			<MiningField name="x8"/>
+			<MiningField name="x59"/>
+			<MiningField name="x46"/>
+			<MiningField name="x2"/>
+			<MiningField name="x49"/>
+			<MiningField name="x15"/>
+			<MiningField name="x11"/>
+		</MiningSchema>
+		<Node score="9.555555555555555">
+			<True/>
+			<Node score="14.020408163265307">
+				<SimplePredicate field="double(x36)" operator="lessOrEqual" value="0.38383838534355164"/>
+			</Node>
+			<Node score="14.024390243902438">
+				<SimplePredicate field="double(x35)" operator="lessOrEqual" value="0.2929292917251587"/>
+			</Node>
+			<Node score="9.64">
+				<SimplePredicate field="double(x38)" operator="lessOrEqual" value="0.9595959782600403"/>
+				<Node score="9.5">
+					<SimplePredicate field="double(x43)" operator="lessOrEqual" value="0.49494948983192444"/>
+					<Node score="12.030303030303031">
+						<SimplePredicate field="double(x44)" operator="lessOrEqual" value="0.4292929321527481"/>
+						<Node score="10.057142857142857">
+							<SimplePredicate field="double(x31)" operator="lessOrEqual" value="0.38383838534355164"/>
+							<Node score="12.964912280701755">
+								<SimplePredicate field="double(x34)" operator="lessOrEqual" value="0.4292929321527481"/>
+								<Node score="9.387096774193548">
+									<SimplePredicate field="double(x34)" operator="lessOrEqual" value="0.3434343487024307"/>
+									<Node score="12.511111111111111">
+										<SimplePredicate field="double(x19)" operator="lessOrEqual" value="0.16161616146564484"/>
+										<Node score="12.368421052631579">
+											<SimplePredicate field="double(x29)" operator="lessOrEqual" value="0.2929292917251587"/>
+											<Node score="11.46875">
+												<SimplePredicate field="double(x40)" operator="lessOrEqual" value="0.4848484694957733"/>
+												<Node score="11.025">
+													<SimplePredicate field="double(x50)" operator="lessOrEqual" value="0.14141414314508438"/>
+													<Node score="11.428571428571429">
+														<SimplePredicate field="double(x35)" operator="lessOrEqual" value="0.5858585834503174"/>
+														<Node score="11.64864864864865">
+															<SimplePredicate field="double(x12)" operator="lessOrEqual" value="0.2525252550840378"/>
+														</Node>
+														<Node score="11.25">
+															<SimplePredicate field="double(x40)" operator="lessOrEqual" value="0.16161616146564484"/>
+														</Node>
+														<Node score="9.875">
+															<SimplePredicate field="double(x40)" operator="lessOrEqual" value="0.38383838534355164"/>
+															<Node score="10.604166666666666">
+																<SimplePredicate field="double(x38)" operator="lessOrEqual" value="0.4040404111146927"/>
+															</Node>
+														</Node>
+													</Node>
+													<Node score="11.146341463414634">
+														<SimplePredicate field="double(x14)" operator="lessOrEqual" value="0.07575757801532745"/>
+														<Node score="11.642857142857142">
+															<SimplePredicate field="double(x27)" operator="lessOrEqual" value="0.27272726595401764"/>
+															<Node score="12.411764705882353">
+																<SimplePredicate field="double(x21)" operator="lessOrEqual" value="0.2929292917251587"/>
+															</Node>
+														</Node>
+													</Node>
+												</Node>
+												<Node score="12.23404255319149">
+													<SimplePredicate field="double(x60)" operator="lessOrEqual" value="0.6930555403232574"/>
+												</Node>
+											</Node>
+										</Node>
+									</Node>
+									<Node score="10.333333333333334">
+										<SimplePredicate field="double(x8)" operator="lessOrEqual" value="0.23232323676347733"/>
+										<Node score="11.916666666666666">
+											<SimplePredicate field="double(x43)" operator="lessOrEqual" value="0.3181818276643753"/>
+										</Node>
+									</Node>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="9.515151515151516">
+							<SimplePredicate field="double(x59)" operator="lessOrEqual" value="0.23232323676347733"/>
+							<Node score="10.795454545454545">
+								<SimplePredicate field="double(x46)" operator="lessOrEqual" value="0.2070707082748413"/>
+								<Node score="11.92">
+									<SimplePredicate field="double(x43)" operator="lessOrEqual" value="0.12121212109923363"/>
+									<Node score="10.0">
+										<SimplePredicate field="double(x2)" operator="lessOrEqual" value="0.7878787815570831"/>
+										<Node score="11.0">
+											<SimplePredicate field="double(x8)" operator="lessOrEqual" value="0.38383838534355164"/>
+										</Node>
+									</Node>
+									<Node score="11.325">
+										<SimplePredicate field="double(x8)" operator="lessOrEqual" value="0.4040404111146927"/>
+										<Node score="10.657894736842104">
+											<SimplePredicate field="double(x49)" operator="lessOrEqual" value="0.07575757801532745"/>
+										</Node>
+									</Node>
+								</Node>
+								<Node score="9.706896551724139">
+									<SimplePredicate field="double(x15)" operator="lessOrEqual" value="0.3181818276643753"/>
+								</Node>
+							</Node>
+						</Node>
+						<Node score="11.290322580645162">
+							<SimplePredicate field="double(x40)" operator="lessOrEqual" value="0.2626262605190277"/>
+							<Node score="10.64516129032258">
+								<SimplePredicate field="double(x11)" operator="lessOrEqual" value="0.7373737394809723"/>
+							</Node>
+						</Node>
+						<Node score="11.09375">
+							<SimplePredicate field="double(x35)" operator="lessOrEqual" value="0.7171717286109924"/>
+						</Node>
+						<Node score="12.451612903225806">
+							<SimplePredicate field="double(x43)" operator="lessOrEqual" value="0.1515151485800743"/>
+						</Node>
+					</Node>
+				</Node>
+			</Node>
+			<Node score="10.580645161290322">
+				<SimplePredicate field="double(x59)" operator="lessOrEqual" value="0.16161616146564484"/>
+				<Node score="9.942857142857143">
+					<SimplePredicate field="double(x8)" operator="lessOrEqual" value="0.18686868995428085"/>
+				</Node>
+			</Node>
+		</Node>
+	</TreeModel>
+</PMML>

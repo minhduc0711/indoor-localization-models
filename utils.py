@@ -46,7 +46,7 @@ def load_data(path, idx_dict=None):
 
     for (i, df) in enumerate(df_list):
         X[i, :] = to_feature_vector(df, idx_dict)
-        # Swap positions of x and y co-ords 
+        # Swap positions of x and y co-ords
         y[i, 0] = df.iloc[0, 1]
         y[i, 1] = df.iloc[0, 0]
     return X, y, idx_dict
@@ -86,8 +86,8 @@ def remove_noisy_ssid(fnames):
     for ssid in list(common_keys):
         cleaned_idx_dict[ssid] = idx
         idx += 1
-    
-    with open("cleaned_idx_dict.json", "w") as f:
+
+    with open("data/cleaned_idx_dict.json", "w") as f:
         json.dump(cleaned_idx_dict, f)
 
 

@@ -6,7 +6,7 @@ from keras.models import load_model
 from keras import backend as K
 import os.path as osp
 
-path_to_model = "neural_net.h5"
+path_to_model = "models/neural_net.h5"
 saved_model_path = "neural_net"
 model = load_model(path_to_model)
 nb_classes = 2  # The number of output nodes in the model
